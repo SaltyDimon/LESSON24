@@ -13,6 +13,7 @@ function getDistance(event, target) {
 
 function getDistanceHind(distance) {
     if (distance < 10) {
+        color = "#f00";
         return "Пече!";
     } else if (distance < 20) {
         return "Дуже гаряче";
@@ -21,6 +22,7 @@ function getDistanceHind(distance) {
     } else if (distance < 80) {
         return "Тепло";
     } else if (distance < 160) {
+        color = "#00f";
         return "Холодно";
     } else if (distance < 320) {
         return "Дуже холодно";
@@ -32,6 +34,7 @@ function getDistanceHind(distance) {
 const width = 400;
 const height = 400;
 let click = 0;
+let color;
 
 const target = {
     x: getRandomNumber(width),
@@ -48,7 +51,7 @@ mapElement.addEventListener("click", (event) => {
     let posX = event.clientX - rect.left;
     let posY = event.clientY - rect.top;
 
-    ctx.fillStyle = "#00ff00";
+    ctx.fillStyle = color;
 
     ctx.beginPath();
 

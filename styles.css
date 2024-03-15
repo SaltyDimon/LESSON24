@@ -7,8 +7,6 @@
 
 #map { /* Используем селектор атрибута для элемента с id="map" */
     background-image: url(map.jpg); 
-    width: 400px; 
-    height: 400px;
     /* border: 10px solid #00000081; Толщина и цвет рамки */
     /* padding: 0px; Отступ внутри рамки */
     /* display: inline-block; Для того чтобы рамка подстраивалась под размеры изображения */
