@@ -1,0 +1,20 @@
+.title {
+    text-align: center;
+    color: #0029cd;
+    background-color: #d9ff02;
+}
+
+#map { /* Используем селектор атрибута для элемента с id="map" */
+    border: 10px solid #00000081; /* Толщина и цвет рамки */
+    padding: 0px; /* Отступ внутри рамки */
+    display: inline-block; /* Для того чтобы рамка подстраивалась под размеры изображения */
+}
+
+#map img {
+    max-width: 100%; /* Чтобы изображение не выходило за рамки */
+    height: auto; /* Для поддержки соотношения сторон */
+}
+
+*{
+    cursor:url('aim.png'),pointer;
+}
